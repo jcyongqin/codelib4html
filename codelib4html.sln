@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2011
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "codelib4html", "codelib4html\codelib4html.njsproj", "{3EEE4BFD-53EF-4F14-B8FD-D1EC88B8FB0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EEE4BFD-53EF-4F14-B8FD-D1EC88B8FB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEE4BFD-53EF-4F14-B8FD-D1EC88B8FB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEE4BFD-53EF-4F14-B8FD-D1EC88B8FB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEE4BFD-53EF-4F14-B8FD-D1EC88B8FB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4BE129D-95DD-4D9E-B980-EA27C9D6AF9C}
+	EndGlobalSection
+EndGlobal

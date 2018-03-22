@@ -1,0 +1,12 @@
+{
+  "name": "codelib4html",
+  "version": "0.0.0",
+  "description": "codelib4html",
+  "main": "app.js",
+  "author": {
+    "name": "wyq"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.87"
+  }
+}
