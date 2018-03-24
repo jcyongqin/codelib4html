@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="page">
+        <div class="content main">
+            <div class="refer">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    ...
+                    <br /> 点击上方
+                    <b>...</b>查看控制台。
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var genCssSelector = function (ETarget) {
+            // click事件发生在  <ul />
+            // your code here
+            var ele = document.getElementsByClassName("refer");
+            __html = ETarget.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName;
+            __body = ETarget.parentNode.parentNode.parentNode.parentNode.nodeName;
+            __page = "#" + ETarget.parentNode.parentNode.parentNode.id;
+            __cont_main = "." + ETarget.parentNode.parentNode.classList[0] + "." + ETarget.parentNode.parentNode.classList[1];
+            __refer = "." + ETarget.parentNode.classList;
+            __ul = ETarget.nodeName;
+            __li = ETarget.childNodes[1].nodeName;
+            return [__html, __body, __page, __cont_main, __refer, __ul, __li].reduce((pVal, cVal) => pVal.toLowerCase() + " " + cVal.toLowerCase());
+
+            // return ele.className;
+
+        }
+
+        document.addEventListener('click', function (e) {
+            //点击li时，返回：html body #page .content.main .refer ul li
+            console.log(genCssSelector(e.target));
+        })
+    </script>
+</body>
+
+</html>
