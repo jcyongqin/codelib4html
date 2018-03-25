@@ -6,20 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Start Up 4</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            width: 100%;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 20px 0;
+            color: yellow;
+            text-shadow: 2px 2px 1px black;
+        }
+
+        header {
+            padding: 5px;
+            background-color: lightblue;
+        }
+
+        footer {
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            padding-left: 45%;
+
+            background-color: lightblue;
+        }
+    </style>
+
 </head>
 
 <body>
 
+    <!-- 绝对定位，dom位置不影响表现-->
+    <footer>
+        <P>&copy;2018</P>
+    </footer>
+
+    <header>
+        <h1> 学生信息管理</h1>
+    </header>
+
+    <section class="main-content">
+        <table border="1">
+            <caption>学生信息</caption>
+            <tr>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>年龄</th>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>123456</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>123987</td>
+                <td>21</td>
+            </tr>
+        </table>
+
+        <form>
+            <fieldset>
+                <label for="name">姓名</label>
+                <input type="text" name="" id="name">
+
+                <label for="name">学号</label>
+                <input type="number" name="" id="id">
+
+                <label for="name">出生日期</label>
+                <input type="date" name="" id="age">
+
+                <button herf="script">提交</button>
+            </fieldset>
+
+        </form>
+    </section>
 
     <script>
-        function foo() {
+        function foo() { // 帅气的打印1-9，使用let。
             for (let index = 0; index < 10; index++) {
-
                 setTimeout(
                     () => {
                         console.log(index);
-                    }, 
-                    100*index);
+                    },
+                    100 * index);
             }
         }
         foo();
